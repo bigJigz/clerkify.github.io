@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clerkify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Libre+Baskerville:wght@400;700&family=Didact+Gothic&display=swap');
+    </style>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+
+    <!--Nav-->
+        <nav id="nav-bar" class="nav-container">
+            <!--Contact Links-->
+            <ul class="contact-info merriweather-regular">
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:8888888888" title="Call Us">(888) 888-8888</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <a id="contact-link" href="mailto:files@clerkify.ca" title="Email Us">CONTACT@CLERKIFY.COM</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-map-pin"></i>
+                    <a href="#" title="Find Us">123 THE SREET,SOMEWHERESVILLE,CA</a>
+                </li>
+            </ul>
+            <!--Credential Links-->
+            <ul class="cred-links georgia">
+                <li class="login">
+                    <a href="#" id="open-login" class="auth-link">LOGIN</a>
+                    <div class="link-bg"></div>
+                </li>
+                <li>
+                    <p>|</p>
+                </li>
+                    <li class="register">
+                    <a href="#" id="open-register" class="auth-link">REGISTER</a>
+                    <div class="link-bg"></div>
+                </li>
+            </ul>
+            <!--Social Links-->
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </nav>
+
+    <!-- Login Popup -->
+        <div class="auth-popup" id="login-popup">
+            <div class="auth-content">
+                <button class="close-btn" data-close>&times;</button>
+                <h2 class="auth-title">Welcome Back</h2>
+                <form class="auth-form" id="login-form">
+                    <label>Email</label>
+                    <input type="email" placeholder="you@example.com" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••" required>
+                    
+                    <button type="submit" class="auth-btn">Log In</button>
+                </form>
+            </div>
+        </div>
+
+    <!-- Register Popup -->
+        <div class="auth-popup" id="register-popup">
+            <div class="auth-content">
+                <button class="close-btn" data-close>&times;</button>
+                <h2 class="auth-title">Create Account</h2>
+                <form class="auth-form" id="register-form">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your Name" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="you@example.com" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Repeat password" required>
+
+                    <button type="submit" class="auth-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+    <!--Header-->
+        <header class="header-container">
+            <!--Logo-->
+            <div class="logo-container">
+                <img src="resources/ClerkifyLogo_tr.png">
+            </div>
+            <!--Main Menu-->
+           <ul class="main-menu didact-gothic-regular">
+                <li class="home">
+                    <a href="#">Home</a>
+                    <div class="home-underline"></div>
+                </li>
+                    <li class="about">
+                    <a href="#">About Us</a>
+                    <div class="about-underline"></div>
+                </li>
+                <!--Service Menu-->
+                <nav class="service-menu">
+                    <button class="services didact-gothic-regular"><a href="#">Services</a></button>
+                    <div class="services-underline"></div>
+                    <!--Dropdown Content-->
+                    <div class="service-content ">
+                        <a href="#">Purchase & Sale</a>
+                        <a href="#">Title & Registry</a>
+                        <a href="#">Closing Services</a>
+                        <a href="#">Refinancing</a>
+                        <a href="#">Transfers</a>
+                    </div>
+                </nav>
+            </ul>   
+        </header>
+        
+    <!--Carousel-->
+        <section class="section-one">
+            <div class="carousel" data-carousel> 
+                <button class="carousel-button prev" data-carousel-button="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next" data-carousel-button="next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <div class="slide-caption merriweather-regular">
+                            <h1>The Key to a <br> Seamless Transaction</h1>
+                            <br>
+                            <p>Connecting contracts, clients, and keys <br> with precision and care.</p>
+                            <button class="learn-button">
+                                <div class="lb-text">
+                                    Read More
+                                    <span class="arrow">➡</span>
+                                </div>
+                                <div class="lb-overlay"></div>
+                            </button>
+                            </a>
+                        </div>
+                        <img src="resources/key_banner.webp" alt="">
+                    </li>
+                    <li class="slide">
+                        <div class="slide-caption merriweather-regular">
+                            <h1>Your Dream Home is <br> One Closing Away</h1>
+                            <br>
+                            <p>We make the process seamless, from signing <br> the contract to getting the keys in your hand.</p>
+                            <button class="learn-button">
+                                <div class="lb-text">
+                                    Read More
+                                    <span class="arrow">➡</span>
+                                </div>
+                                <div class="lb-overlay"></div>
+                            </button>
+                            </a>
+                        </div>
+                        <img src="resources/house_banner.webp" alt="">
+                    </li>
+                    <li class="slide">
+                        <div class="slide-caption merriweather-regular">
+                            <h1>Closing Deals, <br> Opening Doors</h1>
+                            <br>
+                            <p>Reliable clerical services that turn real estate <br> transactions into new beginnings.</p>
+                            <button class="learn-button">
+                                <div class="lb-text">
+                                    Read More
+                                    <span class="arrow">➡</span>
+                                </div>
+                                <div class="lb-overlay"></div>
+                            </button>
+                            </a>
+                        </div>
+                        <img src="resources/jakub-zerdzicki-GQn9GnMkVQg-unsplash.jpg" alt="">
+                    </li> 
+                </ul>
+            </div>
+        </section>
+
+    <!--Info Cards-->
+        <section class="section-two">
+            <div class="cardHeader didact-gothic-regular">
+                <h1>Insert Title</h1>
+                <h2 class="didact-gothic-regular">Place a tag line or relevant information here</h2>
+            </div>
+            <div class="cardContainer">
+                <div class="card cardOne">
+                    <div class="card-content">
+                        <h3 class="merriweather-regular">Premium Quality</h3>
+                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card-content-hidden">
+                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
+                    </div>
+                </div>
+                <div class="card cardTwo">
+                    <div class="card-content">
+                        <h3 class="merriweather-regular">Expert Team</h3>
+                        <p class="didact-gothic-regular">Phasellus eget ligula vel nulla tincidunt ultricies.</p>
+                    </div>
+                    <div class="card-content-hidden">
+                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
+                    </div>
+                </div>
+                <div class="card cardThree">
+                    <div class="card-content">
+                        <h3 class="merriweather-regular">Affordable Pricing</h3>
+                        <p class="didact-gothic-regular">Sed quis dui vel massa laoreet fermentum non at odio.</p>
+                    </div>
+                    <div class="card-content-hidden">
+                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
+                    </div>
+                </div>
+                <div class="card cardThree">
+                    <div class="card-content">
+                        <h3 class="merriweather-regular">Affordable Pricing</h3>
+                        <p class="didact-gothic-regular">Sed quis dui vel massa laoreet fermentum non at odio.</p>
+                    </div>
+                    <div class="card-content-hidden">
+                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Flow Banner-->
+       <section class="section-three">
+            <div class="color-banner">
+                <h2 class="flow-title merriweather-regular">The Clerkify Process</h2>
+
+                <div class="flow-wrap">
+                    <!-- SVG connectors are drawn by JS -->
+                    <svg class="flow-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+                    <div class="flow-grid">
+                        <article class="node left" id="node-1" data-next="#node-2">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">1</span>
+                                <h3 playfair-display>Client Intake</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Confirm parties, ID verification, collect engagement documents, and establish timelines.</p>
+                        </article>
+
+                        <article class="node right" id="node-2" data-next="#node-3">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">2</span>
+                                <h3>Title & Off-Title Search</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Order title, review instruments, check taxes/utilities, verify legal description, and note encumbrances.</p>
+                        </article>
+
+                        <article class="node left" id="node-3" data-next="#node-4">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">3</span>
+                                <h3>Document Drafting</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Prepare transfer, charge/mortgage, affidavits, statements, undertakings, and client signing package.</p>
+                        </article>
+
+                        <article class="node right" id="node-4" data-next="#node-5">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">4</span>
+                                <h3>Lender & Opposing Counsel</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Reconcile figures, request payouts, obtain instructions, and coordinate signing and funding logistics.</p>
+                        </article>
+
+                        <article class="node left" id="node-5" data-next="#node-6">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">5</span>
+                                <h3>Closing & Registration</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Release funds, e-register, confirm discharges/registrations, exchange keys and undertakings.</p>
+                        </article>
+
+                        <article class="node right end" id="node-6">
+                            <header class="node-head didact-gothic-regular">
+                                <span class="badge">6</span>
+                                <h3>Post-Closing & Reporting</h3>
+                            </header>
+                            <p class="didact-gothic-regular">Deliver final report, receipts, and registered docs; archive the file and diarize any follow-ups.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- About Section -->
+                <div class="footer-section about">
+                    <h2>Clerkify</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Support Section -->
+                <div class="footer-section support">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-section support">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section support">
+                    <h2>Support</h2>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+
+
+    
+
+    </div>
+</body>
+</html>
