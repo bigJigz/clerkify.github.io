@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Clerkify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+
+    <!--Nav-->
+        <nav id="nav-bar" class="nav-container">
+            <div class="nav-left">
+                <ul class="contact-info merriweather-regular">
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:8888888888" title="Call Us">(888) 888-8888</a></li>
+                    <li><i class="fa-solid fa-paper-plane"></i><a id="contact-link" href="#" title="Email Us">CONTACT@CLERKIFY.COM</a></li>
+                    <li><i class="fa-solid fa-map-pin"></i><a href="#" title="Find Us">123 THE STREET, SOMEWHERESVILLE, ON</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="get-app-btn" href="#" target="_blank" rel="noopener">
+                    <i class="fab fa-apple"></i> Get the App
+                </a>
+                <div class="nav-divider"></div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </nav>
+
+    <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+            <ul class="mobile-nav-links didact-gothic-regular">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="mobile-services-item">
+                    <button class="mobile-services-toggle didact-gothic-regular">Services <span class="mobile-arrow">&#9662;</span></button>
+                    <div class="mobile-service-content">
+                        <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                        <a href="services.html#title-registry">Title &amp; Registry</a>
+                        <a href="services.html#closing-services">Closing Services</a>
+                        <a href="services.html#refinancing">Refinancing</a>
+                        <a href="services.html#transfers">Transfers</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="mobile-get-app get-app-btn" href="#" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> Get the App
+            </a>
+            <div class="mobile-contact-info merriweather-regular">
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8888888888">(888) 888-8888</a></p>
+                <p><i class="fa-solid fa-paper-plane"></i><a id="mobile-contact-link" href="#">CONTACT@CLERKIFY.COM</a></p>
+                <p><i class="fa-solid fa-map-pin"></i><a href="#">123 THE STREET, SOMEWHERESVILLE, ON</a></p>
+            </div>
+            <div class="mobile-social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    <!--Contact Popup-->
+        <div id="contactSection">
+            <div class="contact-container">
+                <button class="close-btn" id="close-contact">&times;</button>
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contact-form">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" name="name" required>
+                    <label for="c-email">Your Email</label>
+                    <input type="email" id="c-email" name="email" required>
+                    <label for="c-message">Your Message</label>
+                    <textarea id="c-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    <!--Header-->
+        <header class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo"></a>
+            </div>
+            <ul class="main-menu didact-gothic-regular">
+                <li class="home"><a href="index.html">Home</a><div class="home-underline"></div></li>
+                <li class="about"><a href="about.html">About Us</a><div class="about-underline"></div></li>
+                <li>
+                    <nav class="service-menu">
+                        <button class="services didact-gothic-regular"><a href="services.html">Services</a></button>
+                        <div class="services-underline"></div>
+                        <div class="service-content">
+                            <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                            <a href="services.html#title-registry">Title &amp; Registry</a>
+                            <a href="services.html#closing-services">Closing Services</a>
+                            <a href="services.html#refinancing">Refinancing</a>
+                            <a href="services.html#transfers">Transfers</a>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
+        </header>
+
+    <!--Page Hero-->
+        <section class="page-hero">
+            <h1>About <span class="accent">Clerkify</span></h1>
+            <p>We built Clerkify around a straightforward idea &mdash; that every client deserves the same level of care and attention, regardless of how many files are on our desk.</p>
+        </section>
+
+    <!--About Content-->
+        <div class="about-wrap">
+            <div class="about-intro">
+                <h2>Your Property, Our Priority</h2>
+                <p>Clerkify is a residential real estate clerical services firm operating in Ontario. We specialize exclusively in the processing and closing of residential transactions &mdash; purchases, sales, refinances, and title transfers &mdash; all performed under the supervision of a licensed Ontario real estate lawyer. We do not do a little bit of everything. We do this, and we do it well. That singular focus means our team knows every stage of a residential closing inside and out, and our clients feel that difference from the first conversation to the final report.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Who We Are</h3>
+                    <p>We are a team of experienced real estate law clerks with a shared commitment to precision, communication, and client care. Our work sits at the intersection of legal process and personal service &mdash; technical enough to protect your interests, approachable enough to make you feel informed and at ease. Every file is handled by someone who has closed hundreds of transactions and treats yours with the same attention they would give their own.</p>
+                </div>
+                <div class="about-card">
+                    <h3>What Sets Us Apart</h3>
+                    <ul>
+                        <li>Exclusive focus on residential real estate &mdash; no divided attention</li>
+                        <li>Consistent, proactive communication at every stage of your file</li>
+                        <li>Flexible scheduling including evenings, weekends, and mobile signings</li>
+                        <li>One included mobile signing anywhere within the GTA</li>
+                        <li>All work supervised by a licensed Ontario real estate lawyer</li>
+                        <li>Transparent pricing with no surprise fees at closing</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Our Approach</h3>
+                    <p>Real estate transactions carry real stakes. We approach every file with the understanding that for most people, this is one of the largest financial decisions they will ever make. That means we communicate clearly, manage timelines proactively, and flag anything unusual before it becomes a problem. We do not wait for issues to surface &mdash; we look ahead so you do not have to.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Our Commitment</h3>
+                    <p>We measure success the same way our clients do &mdash; a transaction that closes on time, without surprises, with every document in order. That outcome does not happen by accident. It is the result of thorough preparation, careful review, and consistent follow-through on every file we take on. We are proud of our track record and work every day to protect it.</p>
+                </div>
+            </div>
+            <div class="about-values">
+                <div class="value-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Integrity</h4>
+                    <p>Straightforward about what we do, what we charge, and what to expect. No fine print, no surprises.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <h4>Reliability</h4>
+                    <p>Your closing date is not flexible, and neither are we. We build timelines that work and follow through on them.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <h4>Communication</h4>
+                    <p>You will always know where your file stands. An informed client is a confident one.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h4>Precision</h4>
+                    <p>The details matter in real estate law. We check, review, and verify &mdash; because getting it right the first time protects everyone.</p>
+                </div>
+            </div>
+        </div>
+
+    <!--CTA Banner-->
+        <div class="cta-banner">
+            <h2>Have questions before you get started?</h2>
+            <p>Our FAQ covers the most common things clients ask &mdash; or reach out directly and we will walk you through it together.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;">
+                <a href="faq.html" class="cta-btn">Read Our FAQs</a>
+                <a href="#" class="cta-btn open-contact-popup" style="background:transparent;border-color:rgba(255,255,255,0.7);">Get in Touch</a>
+            </div>
+        </div>
+
+    <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo">
+                    <p>Residential real estate clerical services in Ontario, performed under the supervision of a licensed real estate lawyer.</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="services.html#purchase-sale">Purchase &amp; Sale</a></li>
+                        <li><a href="services.html#title-registry">Title &amp; Registry</a></li>
+                        <li><a href="services.html#closing-services">Closing Services</a></li>
+                        <li><a href="services.html#refinancing">Refinancing</a></li>
+                        <li><a href="services.html#transfers">Transfers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:8888888888">(888) 888-8888</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="#" class="open-contact-popup">contact@clerkify.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>123 The Street, Somewheresville, ON</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clerkify. All rights reserved. &nbsp;|&nbsp; Clerkify is not a law firm. Services are provided under the supervision of a licensed Ontario real estate lawyer.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

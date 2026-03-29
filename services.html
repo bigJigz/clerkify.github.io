@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Clerkify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+
+    <!--Nav-->
+        <nav id="nav-bar" class="nav-container">
+            <div class="nav-left">
+                <ul class="contact-info merriweather-regular">
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:8888888888" title="Call Us">(888) 888-8888</a></li>
+                    <li><i class="fa-solid fa-paper-plane"></i><a id="contact-link" href="#" title="Email Us">CONTACT@CLERKIFY.COM</a></li>
+                    <li><i class="fa-solid fa-map-pin"></i><a href="#" title="Find Us">123 THE STREET, SOMEWHERESVILLE, ON</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="get-app-btn" href="#" target="_blank" rel="noopener">
+                    <i class="fab fa-apple"></i> Get the App
+                </a>
+                <div class="nav-divider"></div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </nav>
+
+    <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+            <ul class="mobile-nav-links didact-gothic-regular">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="mobile-services-item">
+                    <button class="mobile-services-toggle didact-gothic-regular">Services <span class="mobile-arrow">&#9662;</span></button>
+                    <div class="mobile-service-content">
+                        <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                        <a href="services.html#title-registry">Title &amp; Registry</a>
+                        <a href="services.html#closing-services">Closing Services</a>
+                        <a href="services.html#refinancing">Refinancing</a>
+                        <a href="services.html#transfers">Transfers</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="mobile-get-app get-app-btn" href="#" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> Get the App
+            </a>
+            <div class="mobile-contact-info merriweather-regular">
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8888888888">(888) 888-8888</a></p>
+                <p><i class="fa-solid fa-paper-plane"></i><a id="mobile-contact-link" href="#">CONTACT@CLERKIFY.COM</a></p>
+                <p><i class="fa-solid fa-map-pin"></i><a href="#">123 THE STREET, SOMEWHERESVILLE, ON</a></p>
+            </div>
+            <div class="mobile-social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    <!--Contact Popup-->
+        <div id="contactSection">
+            <div class="contact-container">
+                <button class="close-btn" id="close-contact">&times;</button>
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contact-form">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" name="name" required>
+                    <label for="c-email">Your Email</label>
+                    <input type="email" id="c-email" name="email" required>
+                    <label for="c-message">Your Message</label>
+                    <textarea id="c-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    <!--Header-->
+        <header class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo"></a>
+            </div>
+            <ul class="main-menu didact-gothic-regular">
+                <li class="home"><a href="index.html">Home</a><div class="home-underline"></div></li>
+                <li class="about"><a href="about.html">About Us</a><div class="about-underline"></div></li>
+                <li>
+                    <nav class="service-menu">
+                        <button class="services didact-gothic-regular"><a href="services.html">Services</a></button>
+                        <div class="services-underline"></div>
+                        <div class="service-content">
+                            <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                            <a href="services.html#title-registry">Title &amp; Registry</a>
+                            <a href="services.html#closing-services">Closing Services</a>
+                            <a href="services.html#refinancing">Refinancing</a>
+                            <a href="services.html#transfers">Transfers</a>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
+        </header>
+
+    <!--Services Side Nav-->
+        <nav class="services-side-nav" id="services-side-nav" aria-label="Services quick navigation">
+            <a class="ssn-item ssn-top" href="#top" data-target="top">
+                <span class="ssn-label">Top of Page</span>
+                <span class="ssn-dot"></span>
+            </a>
+            <div class="ssn-divider"></div>
+            <a class="ssn-item" href="#purchase-sale" data-target="purchase-sale">
+                <span class="ssn-label">Purchase &amp; Sale</span>
+                <span class="ssn-dot"></span>
+            </a>
+            <a class="ssn-item" href="#title-registry" data-target="title-registry">
+                <span class="ssn-label">Title &amp; Registry</span>
+                <span class="ssn-dot"></span>
+            </a>
+            <a class="ssn-item" href="#closing-services" data-target="closing-services">
+                <span class="ssn-label">Closing Services</span>
+                <span class="ssn-dot"></span>
+            </a>
+            <a class="ssn-item" href="#refinancing" data-target="refinancing">
+                <span class="ssn-label">Refinancing</span>
+                <span class="ssn-dot"></span>
+            </a>
+            <a class="ssn-item" href="#transfers" data-target="transfers">
+                <span class="ssn-label">Transfers</span>
+                <span class="ssn-dot"></span>
+            </a>
+        </nav>
+
+    <!--Page Hero-->
+        <section class="page-hero" id="top">
+            <h1>Our <span class="accent">Services</span></h1>
+            <p>Focused, thorough clerical support for every type of residential real estate transaction in Ontario &mdash; handled with care from start to finish.</p>
+        </section>
+
+    <!--Services Intro-->
+        <div class="services-intro">
+            <p>At Clerkify, every service we offer is built around one goal &mdash; ensuring your transaction closes correctly, on time, and without unnecessary stress. We work exclusively in residential real estate, which means our processes are refined, our knowledge is current, and our attention never gets divided.</p>
+        </div>
+
+    <!--Purchase and Sale-->
+        <section class="service-section" id="purchase-sale">
+            <div class="service-inner">
+                <div class="service-text">
+                    <span class="service-tag">Service 01</span>
+                    <h2>Purchase &amp; Sale</h2>
+                    <p>Buying or selling a home is rarely as simple as it looks on paper. There are agreements to review, timelines to coordinate, funds to reconcile, and documents to register &mdash; and any one of those steps done incorrectly can delay or derail a closing. At Clerkify, we manage the full cycle of your purchase or sale so nothing gets missed.</p>
+                    <p>Whether it is a detached freehold, a condominium, a townhouse, or a POTL, our clerks have handled every property type Ontario residential real estate has to offer.</p>
+                    <ul class="service-checklist">
+                        <li>Agreement of Purchase and Sale review including all amendments and waivers</li>
+                        <li>Preparation of all closing documents to be executed by the buyer or seller</li>
+                        <li>Status certificate review for condominium transactions</li>
+                        <li>Title search and writ search review</li>
+                        <li>Communication with the opposing lawyer throughout the transaction</li>
+                        <li>Arrangement of title insurance</li>
+                        <li>Coordination of key exchange and trust funds</li>
+                        <li>Final report to client upon closing</li>
+                    </ul>
+                </div>
+                <div class="service-panel">
+                    <i class="fa-solid fa-house"></i>
+                    <h4>Handling All Residential Property Types</h4>
+                    <p>Detached, semi-detached, townhouse, condominium, POTL, and assignment transactions are all within our scope.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--Title and Registry-->
+        <section class="service-section alt-bg" id="title-registry">
+            <div class="service-inner reverse">
+                <div class="service-text">
+                    <span class="service-tag">Service 02</span>
+                    <h2>Title &amp; Registry</h2>
+                    <p>A clear title is the foundation of any real estate transaction. Before a single document is signed, we conduct a thorough title and off-title search to confirm exactly what you are acquiring &mdash; and what may be attached to it.</p>
+                    <p>We review the results carefully, report our findings clearly, and take the steps required to resolve any issues before they reach the closing table.</p>
+                    <ul class="service-checklist">
+                        <li>Full title search and review through Teraview and the land registry</li>
+                        <li>Off-title searches including tax arrears, utility accounts, and zoning compliance</li>
+                        <li>Identification and reporting of encumbrances, easements, and restrictions</li>
+                        <li>Writ searches against all parties to the transaction</li>
+                        <li>Legal description verification against the agreement</li>
+                        <li>Arrangement and review of title insurance policy</li>
+                        <li>Requisitions to opposing counsel where applicable</li>
+                    </ul>
+                </div>
+                <div class="service-panel">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h4>Know What You Own Before You Sign</h4>
+                    <p>A title search is not a formality. It is your assurance that what you are buying is exactly what has been represented to you.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--Closing Services-->
+        <section class="service-section" id="closing-services">
+            <div class="service-inner">
+                <div class="service-text">
+                    <span class="service-tag">Service 03</span>
+                    <h2>Closing Services</h2>
+                    <p>Closing day is when everything converges &mdash; funds, documents, registrations, and deadlines all arriving at the same time. Our clerks are experienced in managing the final stage of a real estate transaction with the precision it demands.</p>
+                    <p>We coordinate with all parties, manage the trust account movements, complete electronic registration through Teraview, and ensure keys and funds are released only when all conditions have been satisfied.</p>
+                    <ul class="service-checklist">
+                        <li>Final review and execution of all closing documents</li>
+                        <li>Reconciliation of closing funds and adjustments with all parties</li>
+                        <li>Electronic registration of the transfer and charge via Teraview</li>
+                        <li>Coordination of mortgage payout and discharge where applicable</li>
+                        <li>Release of keys and certified funds upon confirmed registration</li>
+                        <li>Exchange of undertakings between solicitors</li>
+                        <li>Post-closing confirmation and follow-up reporting</li>
+                    </ul>
+                </div>
+                <div class="service-panel">
+                    <i class="fa-solid fa-key"></i>
+                    <h4>Closings That Stay on Time</h4>
+                    <p>We manage the moving parts of closing day so there are no last-minute surprises for you, your agent, or your lender.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--Refinancing-->
+        <section class="service-section alt-bg" id="refinancing">
+            <div class="service-inner reverse">
+                <div class="service-text">
+                    <span class="service-tag">Service 04</span>
+                    <h2>Refinancing</h2>
+                    <p>Whether you are renewing your mortgage, restructuring your financing, or accessing equity through a refinance, legal documentation is required to complete the transaction properly. We review your lender instructions thoroughly, prepare all required documents, register the new mortgage, and arrange for your net proceeds to be deposited directly to your account.</p>
+                    <ul class="service-checklist">
+                        <li>Review of mortgage commitment and lender instructions</li>
+                        <li>Preparation of all mortgage and charge documents</li>
+                        <li>Title and writ search review for the refinancing transaction</li>
+                        <li>Arrangement of title insurance</li>
+                        <li>Coordination of existing mortgage payout and discharge</li>
+                        <li>Payment of unsecured debts per lender instructions where applicable</li>
+                        <li>Electronic registration of the new charge via Teraview</li>
+                        <li>Direct deposit of net proceeds upon closing</li>
+                    </ul>
+                </div>
+                <div class="service-panel">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h4>Your Funds, Deposited Directly</h4>
+                    <p>Once your refinance closes and registration is confirmed, proceeds are transferred directly to your account &mdash; no delays, no detours.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--Transfers-->
+        <section class="service-section" id="transfers">
+            <div class="service-inner">
+                <div class="service-text">
+                    <span class="service-tag">Service 05</span>
+                    <h2>Title Transfers</h2>
+                    <p>Ownership changes do not always come with a sale. A spousal transfer, an addition of a family member to title, a transfer as part of estate administration, or a refinance-related title change all require legal documentation and proper registration to be valid. These transactions are often time-sensitive and emotionally charged &mdash; we handle the process with both care and efficiency.</p>
+                    <ul class="service-checklist">
+                        <li>Preparation of transfer deed and supporting affidavits</li>
+                        <li>Land transfer tax calculation and reporting with exemptions where applicable</li>
+                        <li>Title and writ search review for all parties</li>
+                        <li>Arrangement of title insurance where applicable</li>
+                        <li>Electronic registration of the transfer via Teraview</li>
+                        <li>Survivorship applications following the passing of a registered owner</li>
+                        <li>Name change registrations on title</li>
+                        <li>Title transfers in connection with a refinancing transaction</li>
+                    </ul>
+                </div>
+                <div class="service-panel">
+                    <i class="fa-solid fa-right-left"></i>
+                    <h4>Ownership Changes Done Right</h4>
+                    <p>Every title transfer carries legal weight. We ensure the documentation and registration are accurate so there are no complications down the road.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--CTA Banner-->
+        <div class="cta-banner">
+            <h2>Not sure which service applies to your situation?</h2>
+            <p>Reach out and we will point you in the right direction. There is no obligation &mdash; just a straightforward conversation about what you need.</p>
+            <a href="#" class="cta-btn open-contact-popup">Get in Touch</a>
+        </div>
+
+    <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo">
+                    <p>Residential real estate clerical services in Ontario, performed under the supervision of a licensed real estate lawyer.</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="services.html#purchase-sale">Purchase &amp; Sale</a></li>
+                        <li><a href="services.html#title-registry">Title &amp; Registry</a></li>
+                        <li><a href="services.html#closing-services">Closing Services</a></li>
+                        <li><a href="services.html#refinancing">Refinancing</a></li>
+                        <li><a href="services.html#transfers">Transfers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:8888888888">(888) 888-8888</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="#" class="open-contact-popup">contact@clerkify.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>123 The Street, Somewheresville, ON</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clerkify. All rights reserved. &nbsp;|&nbsp; Clerkify is not a law firm. Services are provided under the supervision of a licensed Ontario real estate lawyer.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

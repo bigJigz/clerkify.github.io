@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs — Clerkify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="page-container">
+
+    <!--Nav-->
+        <nav id="nav-bar" class="nav-container">
+            <div class="nav-left">
+                <ul class="contact-info merriweather-regular">
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:8888888888" title="Call Us">(888) 888-8888</a></li>
+                    <li><i class="fa-solid fa-paper-plane"></i><a id="contact-link" href="#" title="Email Us">CONTACT@CLERKIFY.COM</a></li>
+                    <li><i class="fa-solid fa-map-pin"></i><a href="#" title="Find Us">123 THE STREET, SOMEWHERESVILLE, ON</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="get-app-btn" href="#" target="_blank" rel="noopener">
+                    <i class="fab fa-apple"></i> Get the App
+                </a>
+                <div class="nav-divider"></div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </nav>
+
+    <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+            <ul class="mobile-nav-links didact-gothic-regular">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="mobile-services-item">
+                    <button class="mobile-services-toggle didact-gothic-regular">Services <span class="mobile-arrow">&#9662;</span></button>
+                    <div class="mobile-service-content">
+                        <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                        <a href="services.html#title-registry">Title &amp; Registry</a>
+                        <a href="services.html#closing-services">Closing Services</a>
+                        <a href="services.html#refinancing">Refinancing</a>
+                        <a href="services.html#transfers">Transfers</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="mobile-get-app get-app-btn" href="#" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> Get the App
+            </a>
+            <div class="mobile-contact-info merriweather-regular">
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8888888888">(888) 888-8888</a></p>
+                <p><i class="fa-solid fa-paper-plane"></i><a id="mobile-contact-link" href="#">CONTACT@CLERKIFY.COM</a></p>
+                <p><i class="fa-solid fa-map-pin"></i><a href="#">123 THE STREET, SOMEWHERESVILLE, ON</a></p>
+            </div>
+            <div class="mobile-social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    <!--Contact Popup-->
+        <div id="contactSection">
+            <div class="contact-container">
+                <button class="close-btn" id="close-contact">&times;</button>
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contact-form">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" name="name" required>
+                    <label for="c-email">Your Email</label>
+                    <input type="email" id="c-email" name="email" required>
+                    <label for="c-message">Your Message</label>
+                    <textarea id="c-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    <!--Header-->
+        <header class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo"></a>
+            </div>
+            <ul class="main-menu didact-gothic-regular">
+                <li class="home"><a href="index.html">Home</a><div class="home-underline"></div></li>
+                <li class="about"><a href="about.html">About Us</a><div class="about-underline"></div></li>
+                <li>
+                    <nav class="service-menu">
+                        <button class="services didact-gothic-regular"><a href="services.html">Services</a></button>
+                        <div class="services-underline"></div>
+                        <div class="service-content">
+                            <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                            <a href="services.html#title-registry">Title &amp; Registry</a>
+                            <a href="services.html#closing-services">Closing Services</a>
+                            <a href="services.html#refinancing">Refinancing</a>
+                            <a href="services.html#transfers">Transfers</a>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
+        </header>
+
+    <!--Page Hero-->
+        <section class="page-hero">
+            <h1>Frequently Asked <span class="accent">Questions</span></h1>
+            <p>Answers to the things our clients ask most often &mdash; so you can go into your transaction with clarity and confidence.</p>
+        </section>
+
+    <!--FAQ Accordion-->
+        <div class="faq-wrap">
+            <div class="faq-item">
+                <div class="faq-question"><h3>What exactly does a real estate law clerk do?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>A real estate law clerk handles the administrative and legal preparation work involved in closing a real estate transaction. This includes reviewing agreements, conducting title and off-title searches, preparing closing documents, communicating with lenders and opposing counsel, coordinating signing appointments, managing trust funds, registering documents electronically, and delivering the final report to the client. At Clerkify, all of this work is performed under the supervision of a licensed Ontario real estate lawyer.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>Is Clerkify a law firm?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>No. Clerkify is not a law firm. We are a real estate clerical services firm that operates under the supervision of a licensed Ontario real estate lawyer. Our clerks prepare, review, and manage all aspects of your transaction, and a supervising lawyer is responsible for the legal oversight of every file.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>When will I need to sign my closing documents?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>Signing appointments are typically scheduled between two and ten days before your closing date. Before we can arrange your signing, we need to confirm that all required information and documents from all parties &mdash; including your lender, realtor, and opposing counsel &mdash; have been received and reviewed. We will contact you directly to schedule a time that works for you, including evening and weekend availability.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>What time do I receive my keys on closing day?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>Once mortgage funds are received from your lender and combined with your down payment, those funds are sent to the seller&rsquo;s lawyer along with all required closing documents. Once all conditions are met and the transfer is registered, keys are released &mdash; typically between 2:00 p.m. and 5:00 p.m. We will keep you updated throughout the day.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>Can my closing documents be signed outside of regular business hours?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>Yes. We offer evening and weekend signing appointments, and we also provide mobile signing services &mdash; we come to you. One mobile signing within the Greater Toronto Area is included in our standard fees. For locations outside the GTA, mobile signing is available for an additional fee based on distance.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>What is title insurance and do I need it?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer">
+                    <p>Title insurance is a policy that protects property owners and their lenders against losses arising from issues related to the property&rsquo;s title or ownership. It covers risks including:</p>
+                    <ul>
+                        <li>Unknown title defects that prevent clear ownership</li>
+                        <li>Existing liens from unpaid taxes, mortgages, or condominium fees</li>
+                        <li>Errors in surveys or public records</li>
+                        <li>Encroachments from neighbouring structures</li>
+                        <li>Title fraud and forgery</li>
+                    </ul>
+                    <p>Most lenders in Ontario now require title insurance as a condition of financing. We arrange title insurance on your behalf as part of our standard service.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>What is the difference between joint tenants and tenants in common?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>With joint tenancy, ownership passes automatically to the surviving owner upon death. With tenancy in common, each owner holds a defined share of the property, and upon death that share passes to their estate rather than to the co-owner. The distinction has meaningful legal and estate planning implications, and we recommend discussing your preference with a lawyer before title is registered.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>What qualifies someone as a first-time home buyer in Ontario?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer">
+                    <p>To qualify for the Ontario Land Transfer Tax first-time home buyer refund, the purchaser must:</p>
+                    <ul>
+                        <li>Be at least 18 years of age</li>
+                        <li>Intend to occupy the property as their principal residence within nine months of the transfer date</li>
+                        <li>Have never previously owned or held an interest in a home anywhere in the world</li>
+                        <li>Have a spouse who also has never owned an eligible home while being their spouse</li>
+                    </ul>
+                    <p>If any one of these conditions is not met, the refund may be reduced or unavailable entirely.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>Can you close a transaction on short notice?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>Yes &mdash; if all conditions have been met and we have instructions from all parties, we can typically close a transaction within 48 hours. If you have an urgent closing, contact us immediately so we can assess what is needed and get the file started right away. We will not commit to a timeline we cannot deliver on.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question"><h3>Do you work with all lenders and mortgage types?</h3><span class="faq-icon">+</span></div>
+                <div class="faq-answer"><p>Yes. We regularly work with A lenders including major banks and credit unions, B lenders, and many private lenders. We are familiar with the requirements and instruction formats used by all major institutions and can accommodate most mortgage types including standard, variable, HELOC, and private lending arrangements.</p></div>
+            </div>
+        </div>
+
+    <!--CTA Banner-->
+        <div class="cta-banner">
+            <h2>Still have a question?</h2>
+            <p>If you did not find what you were looking for, reach out directly. We are happy to walk you through anything before you commit.</p>
+            <a href="#" class="cta-btn open-contact-popup">Ask Us Directly</a>
+        </div>
+
+    <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo">
+                    <p>Residential real estate clerical services in Ontario, performed under the supervision of a licensed real estate lawyer.</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Services</h2>
+                    <ul>
+                        <li><a href="services.html#purchase-sale">Purchase &amp; Sale</a></li>
+                        <li><a href="services.html#title-registry">Title &amp; Registry</a></li>
+                        <li><a href="services.html#closing-services">Closing Services</a></li>
+                        <li><a href="services.html#refinancing">Refinancing</a></li>
+                        <li><a href="services.html#transfers">Transfers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:8888888888">(888) 888-8888</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="#" class="open-contact-popup">contact@clerkify.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>123 The Street, Somewheresville, ON</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clerkify. All rights reserved. &nbsp;|&nbsp; Clerkify is not a law firm. Services are provided under the supervision of a licensed Ontario real estate lawyer.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

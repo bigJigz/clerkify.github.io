@@ -1,367 +1,379 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clerkify</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact.css">
+    <title>Clerkify — Your Property, Our Priority</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Libre+Baskerville:wght@400;700&family=Didact+Gothic&display=swap');
-    </style>
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="page-container">
 
     <!--Nav-->
         <nav id="nav-bar" class="nav-container">
-            <!--Contact Links-->
-            <ul class="contact-info merriweather-regular">
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:8888888888" title="Call Us">(888) 888-8888</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <a id="contact-link" href="mailto:files@clerkify.ca" title="Email Us">CONTACT@CLERKIFY.COM</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-map-pin"></i>
-                    <a href="#" title="Find Us">123 THE SREET,SOMEWHERESVILLE,CA</a>
-                </li>
-            </ul>
-            <!--Credential Links-->
-            <ul class="cred-links georgia">
-                <li class="login">
-                    <a href="#" id="open-login" class="auth-link">LOGIN</a>
-                    <div class="link-bg"></div>
-                </li>
-                <li>
-                    <p>|</p>
-                </li>
-                    <li class="register">
-                    <a href="#" id="open-register" class="auth-link">REGISTER</a>
-                    <div class="link-bg"></div>
-                </li>
-            </ul>
-            <!--Social Links-->
-            <div class="social-links">
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="nav-left">
+                <ul class="contact-info merriweather-regular">
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:8888888888" title="Call Us">(888) 888-8888</a></li>
+                    <li><i class="fa-solid fa-paper-plane"></i><a id="contact-link" href="#" title="Email Us">CONTACT@CLERKIFY.COM</a></li>
+                    <li><i class="fa-solid fa-map-pin"></i><a href="#" title="Find Us">123 THE STREET, SOMEWHERESVILLE, ON</a></li>
+                </ul>
             </div>
+            <div class="nav-right">
+                <a class="get-app-btn" href="#" target="_blank" rel="noopener">
+                    <i class="fab fa-apple"></i> Get the App
+                </a>
+                <div class="nav-divider"></div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
         </nav>
 
-    <!-- Login Popup -->
-        <div class="auth-popup" id="login-popup">
-            <div class="auth-content">
-                <button class="close-btn" data-close>&times;</button>
-                <h2 class="auth-title">Welcome Back</h2>
-                <form class="auth-form" id="login-form">
-                    <label>Email</label>
-                    <input type="email" placeholder="you@example.com" required>
-
-                    <label>Password</label>
-                    <input type="password" placeholder="••••••••" required>
-                    
-                    <button type="submit" class="auth-btn">Log In</button>
-                </form>
+    <!--Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu-close" id="mobile-menu-close">&times;</button>
+            <ul class="mobile-nav-links didact-gothic-regular">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="mobile-services-item">
+                    <button class="mobile-services-toggle didact-gothic-regular">Services <span class="mobile-arrow">&#9662;</span></button>
+                    <div class="mobile-service-content">
+                        <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                        <a href="services.html#title-registry">Title &amp; Registry</a>
+                        <a href="services.html#closing-services">Closing Services</a>
+                        <a href="services.html#refinancing">Refinancing</a>
+                        <a href="services.html#transfers">Transfers</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="mobile-get-app get-app-btn" href="#" target="_blank" rel="noopener">
+                <i class="fab fa-apple"></i> Get the App
+            </a>
+            <div class="mobile-contact-info merriweather-regular">
+                <p><i class="fa-solid fa-phone"></i><a href="tel:8888888888">(888) 888-8888</a></p>
+                <p><i class="fa-solid fa-paper-plane"></i><a id="mobile-contact-link" href="#">CONTACT@CLERKIFY.COM</a></p>
+                <p><i class="fa-solid fa-map-pin"></i><a href="#">123 THE STREET, SOMEWHERESVILLE, ON</a></p>
+            </div>
+            <div class="mobile-social-links">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
 
-    <!-- Register Popup -->
-        <div class="auth-popup" id="register-popup">
-            <div class="auth-content">
-                <button class="close-btn" data-close>&times;</button>
-                <h2 class="auth-title">Create Account</h2>
-                <form class="auth-form" id="register-form">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="Your Name" required>
-
-                    <label>Email</label>
-                    <input type="email" placeholder="you@example.com" required>
-
-                    <label>Password</label>
-                    <input type="password" placeholder="Create a password" required>
-
-                    <label>Confirm Password</label>
-                    <input type="password" placeholder="Repeat password" required>
-
-                    <button type="submit" class="auth-btn">Register</button>
+    <!--Contact Popup-->
+        <div id="contactSection">
+            <div class="contact-container">
+                <button class="close-btn" id="close-contact">&times;</button>
+                <h2>Contact Us</h2>
+                <form class="contact-form" id="contact-form">
+                    <label for="c-name">Your Name</label>
+                    <input type="text" id="c-name" name="name" required>
+                    <label for="c-email">Your Email</label>
+                    <input type="email" id="c-email" name="email" required>
+                    <label for="c-message">Your Message</label>
+                    <textarea id="c-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
 
     <!--Header-->
         <header class="header-container">
-            <!--Logo-->
             <div class="logo-container">
-                <img src="resources/ClerkifyLogo_tr.png">
+                <a href="index.html"><img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo"></a>
             </div>
-            <!--Main Menu-->
-           <ul class="main-menu didact-gothic-regular">
-                <li class="home">
-                    <a href="#">Home</a>
-                    <div class="home-underline"></div>
+            <ul class="main-menu didact-gothic-regular">
+                <li class="home"><a href="index.html">Home</a><div class="home-underline"></div></li>
+                <li class="about"><a href="about.html">About Us</a><div class="about-underline"></div></li>
+                <li>
+                    <nav class="service-menu">
+                        <button class="services didact-gothic-regular"><a href="services.html">Services</a></button>
+                        <div class="services-underline"></div>
+                        <div class="service-content">
+                            <a href="services.html#purchase-sale">Purchase &amp; Sale</a>
+                            <a href="services.html#title-registry">Title &amp; Registry</a>
+                            <a href="services.html#closing-services">Closing Services</a>
+                            <a href="services.html#refinancing">Refinancing</a>
+                            <a href="services.html#transfers">Transfers</a>
+                        </div>
+                    </nav>
                 </li>
-                    <li class="about">
-                    <a href="#">About Us</a>
-                    <div class="about-underline"></div>
-                </li>
-                <!--Service Menu-->
-                <nav class="service-menu">
-                    <button class="services didact-gothic-regular"><a href="#">Services</a></button>
-                    <div class="services-underline"></div>
-                    <!--Dropdown Content-->
-                    <div class="service-content ">
-                        <a href="#">Purchase & Sale</a>
-                        <a href="#">Title & Registry</a>
-                        <a href="#">Closing Services</a>
-                        <a href="#">Refinancing</a>
-                        <a href="#">Transfers</a>
-                    </div>
-                </nav>
-            </ul>   
+            </ul>
         </header>
-        
-    <!--Carousel-->
+
+    <!--Hero Panel-->
         <section class="section-one">
-            <div class="carousel" data-carousel> 
-                <button class="carousel-button prev" data-carousel-button="prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-button next" data-carousel-button="next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <div class="slide-caption merriweather-regular">
-                            <h1>The Key to a <br> Seamless Transaction</h1>
-                            <br>
-                            <p>Connecting contracts, clients, and keys <br> with precision and care.</p>
-                            <button class="learn-button">
-                                <div class="lb-text">
-                                    Read More
-                                    <span class="arrow">➡</span>
-                                </div>
-                                <div class="lb-overlay"></div>
-                            </button>
-                            </a>
+            <div class="hero" id="hero">
+                <div class="hero-slide active">
+                    <img src="resources/key_banner.webp" alt="Your property, our priority">
+                    <div class="hero-caption">
+                        <div class="hero-text">
+                            <div class="hero-text-inner">
+                                <span class="hero-eyebrow">Residential Real Estate Clerks &mdash; Ontario</span>
+                                <h1>Your <span class="green-text">Property</span>,<br>Our <span class="green-text">Priority</span>.</h1>
+                                <p>From the first document to the final key &mdash; every step of your transaction handled with precision and care.</p>
+                            </div>
                         </div>
-                        <img src="resources/key_banner.webp" alt="">
-                    </li>
-                    <li class="slide">
-                        <div class="slide-caption merriweather-regular">
-                            <h1>Your Dream Home is <br> One Closing Away</h1>
-                            <br>
-                            <p>We make the process seamless, from signing <br> the contract to getting the keys in your hand.</p>
-                            <button class="learn-button">
-                                <div class="lb-text">
-                                    Read More
-                                    <span class="arrow">➡</span>
+                    <div class="hero-panel">
+                        <div class="hero-panel-card">
+                            <p class="hero-panel-title">Why Clerkify</p>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Lawyer-Supervised</strong>
+                                    <span>All work performed under a licensed Ontario real estate lawyer</span>
                                 </div>
-                                <div class="lb-overlay"></div>
-                            </button>
-                            </a>
-                        </div>
-                        <img src="resources/house_banner.webp" alt="">
-                    </li>
-                    <li class="slide">
-                        <div class="slide-caption merriweather-regular">
-                            <h1>Closing Deals, <br> Opening Doors</h1>
-                            <br>
-                            <p>Reliable clerical services that turn real estate <br> transactions into new beginnings.</p>
-                            <button class="learn-button">
-                                <div class="lb-text">
-                                    Read More
-                                    <span class="arrow">➡</span>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Residential-Only Focus</strong>
+                                    <span>No general practice distractions — exclusively real estate</span>
                                 </div>
-                                <div class="lb-overlay"></div>
-                            </button>
-                            </a>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>GTA-Wide Coverage</strong>
+                                    <span>Mobile signings available — we come to you</span>
+                                </div>
+                            </div>
                         </div>
-                        <img src="resources/jakub-zerdzicki-GQn9GnMkVQg-unsplash.jpg" alt="">
-                    </li> 
-                </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="resources/streethouse.jpg" alt="Every closing deserves a steady hand">
+                    <div class="hero-caption">
+                        <div class="hero-text">
+                            <div class="hero-text-inner">
+                                <span class="hero-eyebrow">Purchase &bull; Sale &bull; Refinance &bull; Transfer</span>
+                                <h1>Every Closing Deserves a <br> Steady Hand.</h1>
+                                <p>Buying, selling, or refinancing &mdash; our clerks ensure nothing falls through the cracks when it matters most.</p>
+                            </div>
+                        </div>
+                    <div class="hero-panel">
+                        <div class="hero-panel-card">
+                            <p class="hero-panel-title">Why Clerkify</p>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Lawyer-Supervised</strong>
+                                    <span>All work performed under a licensed Ontario real estate lawyer</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Residential-Only Focus</strong>
+                                    <span>No general practice distractions — exclusively real estate</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>GTA-Wide Coverage</strong>
+                                    <span>Mobile signings available — we come to you</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <img src="resources/jakub-zerdzicki-GQn9GnMkVQg-unsplash.jpg" alt="Clarity at every stage">
+                    <div class="hero-caption">
+                        <div class="hero-text">
+                            <div class="hero-text-inner">
+                                <span class="hero-eyebrow">Supervised by a Licensed Ontario Real Estate Lawyer</span>
+                                <h1>Clarity at Every Stage.<br>Confidence at Closing.</h1>
+                                <p>We simplify the complex, communicate clearly, and close on time &mdash; every time.</p>
+                            </div>
+                        </div>
+                    <div class="hero-panel">
+                        <div class="hero-panel-card">
+                            <p class="hero-panel-title">Why Clerkify</p>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Lawyer-Supervised</strong>
+                                    <span>All work performed under a licensed Ontario real estate lawyer</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>Residential-Only Focus</strong>
+                                    <span>No general practice distractions — exclusively real estate</span>
+                                </div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="hero-stat-text">
+                                    <strong>GTA-Wide Coverage</strong>
+                                    <span>Mobile signings available — we come to you</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="hero-dots">
+                    <button class="hero-dot active" aria-label="Slide 1"></button>
+                    <button class="hero-dot" aria-label="Slide 2"></button>
+                    <button class="hero-dot" aria-label="Slide 3"></button>
+                </div>
             </div>
         </section>
 
     <!--Info Cards-->
         <section class="section-two">
             <div class="cardHeader didact-gothic-regular">
-                <h1>Insert Title</h1>
-                <h2 class="didact-gothic-regular">Place a tag line or relevant information here</h2>
+                <h1>How We Can Help</h1>
+                <h2>Specialized clerical support for every stage of your real estate transaction.</h2>
             </div>
             <div class="cardContainer">
                 <div class="card cardOne">
-                    <div class="card-content">
-                        <h3 class="merriweather-regular">Premium Quality</h3>
-                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="card-content-hidden">
-                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
-                    </div>
+                    <div class="card-content"><h3 class="merriweather-regular">Purchase &amp; Sale</h3><p>Full-cycle support from agreement review to key exchange.</p></div>
+                    <div class="card-content-hidden"><p>We manage documents, title searches, lender coordination, and registration so your purchase or sale closes without complications.</p></div>
                 </div>
                 <div class="card cardTwo">
-                    <div class="card-content">
-                        <h3 class="merriweather-regular">Expert Team</h3>
-                        <p class="didact-gothic-regular">Phasellus eget ligula vel nulla tincidunt ultricies.</p>
-                    </div>
-                    <div class="card-content-hidden">
-                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
-                    </div>
+                    <div class="card-content"><h3 class="merriweather-regular">Title &amp; Registry</h3><p>Know exactly what you are buying before you sign.</p></div>
+                    <div class="card-content-hidden"><p>We conduct thorough title and off-title searches, flag encumbrances, and ensure your investment is protected from day one.</p></div>
                 </div>
                 <div class="card cardThree">
-                    <div class="card-content">
-                        <h3 class="merriweather-regular">Affordable Pricing</h3>
-                        <p class="didact-gothic-regular">Sed quis dui vel massa laoreet fermentum non at odio.</p>
-                    </div>
-                    <div class="card-content-hidden">
-                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
-                    </div>
+                    <div class="card-content"><h3 class="merriweather-regular">Refinancing</h3><p>Restructure your mortgage with confidence and clarity.</p></div>
+                    <div class="card-content-hidden"><p>We prepare and review all mortgage documents, arrange title insurance, register the charge, and coordinate direct deposit of your proceeds.</p></div>
                 </div>
-                <div class="card cardThree">
-                    <div class="card-content">
-                        <h3 class="merriweather-regular">Affordable Pricing</h3>
-                        <p class="didact-gothic-regular">Sed quis dui vel massa laoreet fermentum non at odio.</p>
-                    </div>
-                    <div class="card-content-hidden">
-                        <p class="didact-gothic-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula vel nulla tincidunt ultricies.</p>
-                    </div>
+                <div class="card cardFour">
+                    <div class="card-content"><h3 class="merriweather-regular">Title Transfers</h3><p>Navigate ownership changes without the complexity.</p></div>
+                    <div class="card-content-hidden"><p>From spousal transfers to estate-related changes, we handle the documentation, registration, and reporting required to update title accurately.</p></div>
                 </div>
             </div>
         </section>
 
     <!--Flow Banner-->
-       <section class="section-three">
+        <section class="section-three">
             <div class="color-banner">
                 <h2 class="flow-title merriweather-regular">The Clerkify Process</h2>
-
                 <div class="flow-wrap">
-                    <!-- SVG connectors are drawn by JS -->
                     <svg class="flow-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"></svg>
-
                     <div class="flow-grid">
                         <article class="node left" id="node-1" data-next="#node-2">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">1</span>
-                                <h3 playfair-display>Client Intake</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Confirm parties, ID verification, collect engagement documents, and establish timelines.</p>
+                            <header class="node-head"><span class="badge">1</span><h3>Client Intake</h3></header>
+                            <p class="didact-gothic-regular">We confirm all parties, complete ID verification, collect engagement documents, and establish a clear timeline from the outset.</p>
                         </article>
-
                         <article class="node right" id="node-2" data-next="#node-3">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">2</span>
-                                <h3>Title & Off-Title Search</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Order title, review instruments, check taxes/utilities, verify legal description, and note encumbrances.</p>
+                            <header class="node-head"><span class="badge">2</span><h3>Title &amp; Off-Title Search</h3></header>
+                            <p class="didact-gothic-regular">We order and review title, check tax and utility status, verify the legal description, and identify any encumbrances that need to be addressed.</p>
                         </article>
-
                         <article class="node left" id="node-3" data-next="#node-4">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">3</span>
-                                <h3>Document Drafting</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Prepare transfer, charge/mortgage, affidavits, statements, undertakings, and client signing package.</p>
+                            <header class="node-head"><span class="badge">3</span><h3>Document Drafting</h3></header>
+                            <p class="didact-gothic-regular">We prepare the full closing package including transfer, charge, affidavits, statements of adjustments, undertakings, and client signing documents.</p>
                         </article>
-
                         <article class="node right" id="node-4" data-next="#node-5">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">4</span>
-                                <h3>Lender & Opposing Counsel</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Reconcile figures, request payouts, obtain instructions, and coordinate signing and funding logistics.</p>
+                            <header class="node-head"><span class="badge">4</span><h3>Lender &amp; Counsel Coordination</h3></header>
+                            <p class="didact-gothic-regular">We reconcile figures, request mortgage payouts, comply with lender instructions, and coordinate signing and funding logistics with all parties.</p>
                         </article>
-
                         <article class="node left" id="node-5" data-next="#node-6">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">5</span>
-                                <h3>Closing & Registration</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Release funds, e-register, confirm discharges/registrations, exchange keys and undertakings.</p>
+                            <header class="node-head"><span class="badge">5</span><h3>Closing &amp; Registration</h3></header>
+                            <p class="didact-gothic-regular">We release funds, complete electronic registration via Teraview, confirm all discharges and registrations, and coordinate key exchange.</p>
                         </article>
-
                         <article class="node right end" id="node-6">
-                            <header class="node-head didact-gothic-regular">
-                                <span class="badge">6</span>
-                                <h3>Post-Closing & Reporting</h3>
-                            </header>
-                            <p class="didact-gothic-regular">Deliver final report, receipts, and registered docs; archive the file and diarize any follow-ups.</p>
+                            <header class="node-head"><span class="badge">6</span><h3>Post-Closing &amp; Reporting</h3></header>
+                            <p class="didact-gothic-regular">We deliver your final report, registered documents, and receipts &mdash; then archive the file and follow up on any outstanding undertakings.</p>
                         </article>
                     </div>
                 </div>
+            </div>
+        </section>
+
+    <!--Split Section-->
+        <section class="section-four">
+            <div class="left-container">
+                <h2 class="split-title merriweather-regular">The Clerkify Difference</h2>
+                <ul class="split-list didact-gothic-regular">
+                    <li>Dedicated focus on residential real estate with no general practice distractions</li>
+                    <li>Proactive file management from intake to post-closing report</li>
+                    <li>Clear, consistent updates throughout every stage of your transaction</li>
+                    <li>Flexible appointments including evenings, weekends, and mobile signings across the GTA</li>
+                    <li>All services performed under the supervision of a licensed Ontario real estate lawyer</li>
+                </ul>
+            </div>
+            <div class="right-container">
+                <h2 class="split-title merriweather-regular">Ready to Move Forward?</h2>
+                <p class="split-cta-text didact-gothic-regular">Whether your closing date is confirmed or you are still in the planning stage, we are ready to answer your questions and get things started. Every transaction begins with a conversation.</p>
+                <a href="#" class="split-btn open-contact-popup">Get in Touch</a>
             </div>
         </section>
 
     <!--Footer-->
         <footer class="footer">
             <div class="footer-container">
-                <!-- About Section -->
-                <div class="footer-section about">
-                    <h2>Clerkify</h2>
+                <div class="footer-brand">
+                    <img src="resources/ClerkifyLogo_tr.png" alt="Clerkify Logo">
+                    <p>Residential real estate clerical services in Ontario, performed under the supervision of a licensed real estate lawyer.</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h2>Navigation</h2>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
                     </ul>
                 </div>
-                <!-- Quick Links -->
-                <div class="footer-section links">
-                    <h2>Quick Links</h2>
+                <div class="footer-section">
+                    <h2>Services</h2>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="services.html#purchase-sale">Purchase &amp; Sale</a></li>
+                        <li><a href="services.html#title-registry">Title &amp; Registry</a></li>
+                        <li><a href="services.html#closing-services">Closing Services</a></li>
+                        <li><a href="services.html#refinancing">Refinancing</a></li>
+                        <li><a href="services.html#transfers">Transfers</a></li>
                     </ul>
                 </div>
-                <!-- Support Section -->
-                <div class="footer-section support">
-                    <h2>Support</h2>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
+                <div class="footer-contact">
+                    <h2>Contact</h2>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:8888888888">(888) 888-8888</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <a href="#" class="open-contact-popup">contact@clerkify.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>123 The Street, Somewheresville, ON</span>
+                    </div>
                 </div>
-                 <div class="footer-section support">
-                    <h2>Support</h2>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section support">
-                    <h2>Support</h2>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                    </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clerkify. All rights reserved. &nbsp;|&nbsp; Clerkify is not a law firm. Services are provided under the supervision of a licensed Ontario real estate lawyer.</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
                 </div>
             </div>
         </footer>
 
-
-
-    
-
     </div>
 </body>
-
 </html>
