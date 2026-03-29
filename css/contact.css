@@ -1,0 +1,93 @@
+/*!!--CONTACT POPUP--!!*/ /*#region*/
+
+    #contactSection {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.68);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    .contact-container {
+        background: rgb(255, 255, 255);
+        padding: 2.2rem 2rem;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 420px;
+        position: relative;
+    }
+    .contact-container h2 {
+        font-family: 'Merriweather', serif;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: rgb(40, 50, 60);
+        margin-bottom: 0.5rem;
+    }
+    .close-btn {
+        position: absolute;
+        top: 12px;
+        right: 14px;
+        font-size: 1.8rem;
+        line-height: 1;
+        background: none;
+        border: none;
+        color: rgb(120, 130, 140);
+        cursor: pointer;
+        transition: transform 0.2s ease, color 0.2s ease;
+    }
+    .close-btn:hover {
+        transform: rotate(90deg);
+        color: rgb(40, 50, 60);
+    }
+    .contact-form label {
+        display: block;
+        margin-top: 1rem;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: rgb(55, 65, 75);
+        letter-spacing: 0.5px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        display: block;
+        width: 100%;
+        margin-top: 0.3rem;
+        padding: 0.55rem 0.7rem;
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 0.9rem;
+        color: rgb(40, 50, 60);
+        border: 1px solid rgba(88, 146, 178, 0.3);
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: rgb(88, 146, 178);
+        box-shadow: 0 0 0 3px rgba(88, 146, 178, 0.12);
+    }
+    .contact-form textarea { resize: vertical; }
+    .contact-form button[type="submit"] {
+        display: block;
+        width: 100%;
+        margin-top: 1.2rem;
+        padding: 0.8rem;
+        background: rgb(88, 146, 178);
+        color: rgb(255, 255, 255);
+        font-family: 'Didact Gothic', sans-serif;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .contact-form button[type="submit"]:hover {
+        background: rgb(101, 172, 93);
+        transform: scale(1.02);
+    }
+
+/*#endregion*/
